@@ -19,17 +19,17 @@ router.get('/', (req, res) => {
 
 
 // USER SHOW ROUTE
-router.get('/:id', (req, res) => {
-User.findById(req.params.id)
-    .then(user => {
-        console.log(user);
-        res.send(user)
-    })
-    .catch(err => {
-        console.log(err)
-    }) 
+// router.get('/:id', (req, res) => {
+// User.findById(req.params.id)
+//     .then(user => {
+//         console.log(user);
+//         res.send(user)
+//     })
+//     .catch(err => {
+//         console.log(err)
+//     }) 
 
-    });
+//     });
 
 
 
