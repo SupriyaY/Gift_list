@@ -19,22 +19,40 @@ router.get('/', (req, res) => {
 
 
 // USER SHOW ROUTE
-// router.get('/:id', (req, res) => {
-// User.findById(req.params.id)
-//     .then(user => {
-//         console.log(user);
-//         res.send(user)
-//     })
-//     .catch(err => {
-//         console.log(err)
-//     }) 
+router.get('/:id', (req, res) => {
+    User.findById(req.params.id)
+        .then(user => {
+            console.log(user);
+            res.send(user)
+        })
+        .catch(err => {
+            console.log(err)
+        })
 
-//     });
+});
 
 
 
 
 // USER CREATE ROUTE
+router.post('/',(req, res) => {
+const user = new User({
+first_name: req.body.first_name,
+email: req.body.email,
+items: req.body.items
+});
+if (!user.photo_url) {
+    user.photo_url = 'https://i.imgur.com/xln20Nb.jpg?1'
+}
+User.create(user)
+.then(() => {
+  res.redirect('/users')
+})
+.catch((error) => {
+  console.log(error)
+})
+})
+
 
 // USER UPDATE ROUTE
 
