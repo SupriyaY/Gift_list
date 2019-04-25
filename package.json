@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "start": "npm i && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
@@ -15,9 +16,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "hbs": "^4.0.4",
+    "mongoose": "^5.5.3",
     "morgan": "^1.9.1"
   }
-
-
-  
 }
