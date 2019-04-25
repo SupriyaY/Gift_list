@@ -14,7 +14,7 @@ app.use('/', usersController)
 
 // Mongoose stuff
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost/express-mongoose-lesson-starter', { useNewUrlParser: true })
+// mongoose.connect('mongodb://localhost/express-mongoose-lesson-starter', { useNewUrlParser: true })
 
 // Now that we're connected, let's save that connection to the database in a variable.
 const db = mongoose.connection
@@ -34,9 +34,6 @@ mongoose.connection.once('open', function() {
   console.log("Mongoose has connected to MongoDB!");
 })
 
-
-
-
 //Will log an error if db can't connect to MongoDB
 db.on('error', function (err) {
   console.log(err)
@@ -47,8 +44,8 @@ db.once('open', function () {
   console.log('database has been connected!')
 })
 
-const port = process.env.PORT || 3000
+// const PORT = process.env.PORT || 3000
 
-app.listen(process.env.PORT, function () {
+app.listen(3000, function () {
   console.log('app listening on port 3000')
 })

@@ -5,7 +5,7 @@ const User = require('../models/user')
 const Item = require('../models/item')
 
 // USERS INDEX ROUTE
-router.get('/users', (req, res) => {
+router.get('/', (req, res) => {
     User.find()
         .then(users => {
             console.log(users);
