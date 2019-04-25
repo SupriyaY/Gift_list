@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": "11.3.0"
+    "node": "11.3.0",
+    "npm": "6.7.0"
   },
   "keywords": [],
   "author": "",
@@ -20,3 +21,5 @@
     "morgan": "^1.9.1"
   }
 }
+
+

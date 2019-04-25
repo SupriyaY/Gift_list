@@ -14,14 +14,13 @@ app.use('/', usersController)
 
 // Mongoose stuff
 const mongoose = require('mongoose')
-// mongoose.connect('mongodb://localhost/express-mongoose-lesson-starter', { useNewUrlParser: true })
 
 
 if (process.env.MONGODB_URI) {
   mongoose.connect(process.env.MONGODB_URI);
 }
 else {
-  mongoose.connect('mongodb://localhost/express-mongoose-lesson-starter', { useNewUrlParser: true });
+  mongoose.connect('mongodb://localhost/example_app', { useNewUrlParser: true });
 }
 mongoose.connection.on('error', function(err) {
   console.error('MongoDB connection error: ' + err);
@@ -45,6 +44,7 @@ db.once('open', function () {
   console.log('database has been connected!')
 })
 
-app.listen(3000, function () {
+const port = process.env.PORT || 3000
+app.listen(port,"0.0.0.0", function () {
   console.log('app listening on port 3000')
 })
