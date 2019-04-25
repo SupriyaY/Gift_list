@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/express-mongoose-lesson-starter');
+mongoose.connect('mongodb://localhost/express-mongoose-lesson-starter',{ useNewUrlParser: true });
 
 const User = require('../models/user');
 const Item = require('../models/item');
