@@ -1,7 +1,6 @@
 {
   "name": "example_app",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "npm i && npm start",
@@ -18,5 +17,15 @@
     "hbs": "^4.0.4",
     "mongoose": "^5.5.3",
     "morgan": "^1.9.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SupriyaY/Gift_list.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SupriyaY/Gift_list/issues"
+  },
+  "homepage": "https://github.com/SupriyaY/Gift_list#readme",
+  "description": ""
 }
