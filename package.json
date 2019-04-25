@@ -18,26 +18,5 @@
     "hbs": "^4.0.4",
     "mongoose": "^5.5.3",
     "morgan": "^1.9.1"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SupriyaY/Gift_list.git"
-  },
-  "bugs": {
-    "url": "https://github.com/SupriyaY/Gift_list/issues"
-  },
-  "homepage": "https://github.com/SupriyaY/Gift_list#readme",
-  "description": "",
-
-
-"buildpacks": [
-  {
-    "url": "https://github.com/heroku/heroku-buildpack-pgbouncer"
-  },
-  {
-    "url": "heroku/nodejs"
   }
-]
-  
 }

@@ -84,7 +84,9 @@ User.findOneAndRemove(request.params.id)
 });
 
 
-// )
+// USER UPDATE ROUTE
+
+// USER DESTROY
 
 // ADD A NEW ITEM
 

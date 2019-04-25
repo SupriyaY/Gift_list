@@ -20,21 +20,21 @@ User.remove({}, function(err){
 const supriya = new User({
   first_name: 'Supriya',
   email: 'supriya@gmail.com',
-  photo_url: 'https://i.imgur.com/P1qQJGz.jpg?1',
+  photo_url: 'https://imgur.com/P1qQJGz',
   items: [{ name: "Diamond earring"}]
 });
 
 const mona = new User({
   first_name: 'Mona',
   email: 'mona@gmail.com',
-  photo_url: 'https://i.imgur.com/3oRYqUP.jpg?1',
+  photo_url: 'https://imgur.com/3oRYqUP',
   items: [{ name: "Louis Vuitton bag"}]
 });
 
 const niya = new User({
   first_name: 'Niya',
   email: 'niya@gmail.com',
-  photo_url: 'https://i.imgur.com/JBCJIso.jpg?1',
+  photo_url: 'https://imgur.com/JBCJIso',
   items: [{ name: "Channel earrings"}]
 });
 
