@@ -17,7 +17,7 @@ const mongoose = require('mongoose')
 mongoose.connect('mongodb://localhost/express-mongoose-lesson-starter', { useNewUrlParser: true })
 
 // Now that we're connected, let's save that connection to the database in a variable.
-// const db = mongoose.connection
+const db = mongoose.connection
 
 if (process.env.MONGODB_URI) {
   mongoose.connect(process.env.MONGODB_URI);
