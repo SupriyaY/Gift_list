@@ -28,5 +28,16 @@
     "url": "https://github.com/SupriyaY/Gift_list/issues"
   },
   "homepage": "https://github.com/SupriyaY/Gift_list#readme",
-  "description": ""
+  "description": "",
+
+
+"buildpacks": [
+  {
+    "url": "https://github.com/heroku/heroku-buildpack-pgbouncer"
+  },
+  {
+    "url": "heroku/nodejs"
+  }
+]
+  
 }
