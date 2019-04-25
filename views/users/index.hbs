@@ -1,16 +1,16 @@
-<style>
+{{!-- <style>
 .user-box{
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
-    </style>
+    </style> --}}
 
 
 
 <div class ="user-box">
     {{#each users}}
-    <img src="{{this.photo_url}}"/>
+    <img src="{{this.photo_url}}" height="200px" width="300px" display="inline-block" margin="30px"/>
     {{/each}}
 </div>
