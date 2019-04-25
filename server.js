@@ -5,6 +5,9 @@ const app = express()
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
+app.use(express.static(__dirname + '/public'));
+app.set("view engine", "hbs");
+app.set('views', './views');
 
 const usersController = require('./controllers/usersController.js')
 app.use('/users', usersController)

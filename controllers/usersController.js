@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
     User.find()
         .then(users => {
             console.log(users);
-            res.send(users);
+            res.render('users/index', {users});
         })
         .catch(err => {
             console.log(err)
@@ -33,18 +33,13 @@ router.get('/:id', (req, res) => {
 
 
 
-
 // USER CREATE ROUTE
 router.post('/',(req, res) => {
-const user = new User({
-first_name: req.body.first_name,
-email: req.body.email,
-items: req.body.items
-});
-if (!user.photo_url) {
-    user.photo_url = 'https://i.imgur.com/xln20Nb.jpg?1'
+const newUser = req.body
+if (!newUser.photo_url) {
+    newUser.photo_url = 'https://i.imgur.com/GNbsodM.jpg?1'
 }
-User.create(user)
+User.create(newUser)
 .then(() => {
   res.redirect('/users')
 })
@@ -54,9 +49,42 @@ User.create(user)
 })
 
 
-// USER UPDATE ROUTE
+// USER EDIT ROUTE
+router.get('/:id/edit', (req, res) => {
+    User.findById(req.params.id)
+    .then((err, user) => {
+        if(err){
+            return;
+        } 
+     res.send(user)
+    });
+});
+
+
+//UPDATE
+    router.put('/:id', function(req, res) {
+        User.findByIdAndUpdate(req.params.id, req.body, {new: true})   
+        .then(()=> {
+          console.log(user);
+          res.send(users);
+        });
+      });
+      
 
 // USER DESTROY
+
+router.delete('/:id', (req, res) => {
+User.findOneAndRemove(request.params.id)
+.then (() => {
+    res.send(users)
+})
+.catch((error) => {
+    console.log(error)
+})
+});
+
+
+// )
 
 // ADD A NEW ITEM
 

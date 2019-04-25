@@ -1,0 +1,16 @@
+<style>
+.user-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    </style>
+
+
+
+<div class ="user-box">
+    {{#each users}}
+    <img src="{{this.photo_url}}"/>
+    {{/each}}
+</div>
