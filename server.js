@@ -10,7 +10,7 @@ app.set("view engine", "hbs");
 app.set('views', './views');
 
 const usersController = require('./controllers/usersController.js')
-app.use('/users', usersController)
+app.use('/', usersController)
 
 // Mongoose stuff
 const mongoose = require('mongoose')

@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
 
 });
 
-
+// add USERS TO EVERYTHIN 
 // USER SHOW ROUTE
 router.get('/:id', (req, res) => {
     User.findById(req.params.id)
