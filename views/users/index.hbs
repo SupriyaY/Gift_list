@@ -1,8 +1,13 @@
 
-
+<nav> </nav>
 
 <div class ="user-box">
     {{#each users}}
-    <img src="{{this.photo_url}}" height="200px" width="300px" display="inline-block" margin="30px"/>
+    <div class="user-marker">
+    <img src="{{this.photo_url}}" height="90px" width="120px" />
+    </div>
     {{/each}}
 </div>
+
+
+<div id="instafeed"></div> 

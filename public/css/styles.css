@@ -1,8 +1,39 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
 .user-box{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+   
+}
+.user-box img{
+border-radius: 50%;
+opacity: .5;
+display: block;
+/* padding: 20px; */
+position: absolute;
 }
 
+.user-marker{
+    width: 450px;
+    height: 100px;
+    background-color:rgba(24, 184, 91, 0.3);
+    /* margin-top: 30px; */
+    padding: 10px;
+    position: relative;
+    margin:20px 20px;
+}
+
+
+nav{
+    background-color:rgba(24, 184, 91, 0.3);
+    width: 100%;
+    height: 10%;
+    position: sticky;
+
+
+}
