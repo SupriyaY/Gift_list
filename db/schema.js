@@ -5,6 +5,7 @@ const Schema = mongoose.Schema
 mongoose.Promise = global.Promise
 
 const ItemSchema = new Schema({
+
   name: String,
 })
 
