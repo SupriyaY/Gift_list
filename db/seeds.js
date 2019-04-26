@@ -9,7 +9,7 @@ if (process.env.MONGODB_URI) {
   mongoose.connect(process.env.MONGODB_URI);
 }
 else {
-  mongoose.connect('mongodb://localhost/example_app', { useNewUrlParser: true });
+  mongoose.connect('mongodb://localhost/express-mongoose-starter-lesson', { useNewUrlParser: true });
 }
 mongoose.connection.on('error', function(err) {
   console.error('MongoDB connection error: ' + err);
@@ -32,9 +32,9 @@ User.remove({}, function(err){
 });
 
 // create new users
-const supriya = new User({
-  first_name: 'Supriya',
-  email: 'supriya@gmail.com',
+const sheena = new User({
+  first_name: 'Sheena',
+  email: 'sheena@gmail.com',
   photo_url: 'https://i.imgur.com/P1qQJGz.jpg?1',
   items: [{ name: "Diamond earring"}]
 });
@@ -54,7 +54,7 @@ const niya = new User({
 });
 
 // save the users
-supriya.save(function(err) {
+sheena.save(function(err) {
   if (err) console.log(err);
 
   console.log('supriya created!');

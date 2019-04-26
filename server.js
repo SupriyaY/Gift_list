@@ -20,7 +20,7 @@ if (process.env.MONGODB_URI) {
   mongoose.connect(process.env.MONGODB_URI);
 }
 else {
-  mongoose.connect('mongodb://localhost/example_app', { useNewUrlParser: true });
+  mongoose.connect('mongodb://localhost/express-mongoose-starter-lesson', { useNewUrlParser: true });
 }
 mongoose.connection.on('error', function(err) {
   console.error('MongoDB connection error: ' + err);
