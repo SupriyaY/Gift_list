@@ -3,11 +3,14 @@
 
 <div class ="user-box">
     {{#each users}}
+    <a href="/{{this._id}}">
     <div class="user-marker">
     <img src="{{this.photo_url}}" height="90px" width="120px" />
+    <p>{{this.first_name}}</p>
     </div>
     {{/each}}
 </div>
 
-
-<div id="instafeed"></div> 
+<button class="addFriend">
+<a href="/users/new"> + Add a Gal</a>
+</button>

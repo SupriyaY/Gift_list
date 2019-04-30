@@ -3,6 +3,10 @@ body{
     padding: 0;
     margin: 0;
 }
+
+* a{
+    text-decoration: none
+}
 .user-box{
     display: flex;
     justify-content: flex-start;
@@ -12,7 +16,7 @@ body{
 }
 .user-box img{
 border-radius: 50%;
-opacity: .5;
+opacity: .9;
 display: block;
 /* padding: 20px; */
 position: absolute;
@@ -21,11 +25,12 @@ position: absolute;
 .user-marker{
     width: 450px;
     height: 100px;
-    background-color:rgba(24, 184, 91, 0.3);
+    background-color: #A57F60;
     /* margin-top: 30px; */
     padding: 10px;
     position: relative;
     margin:20px 20px;
+    box-shadow: 5px 10px 8px #888888
 }
 
 
@@ -36,4 +41,19 @@ nav{
     position: sticky;
 
 
+}
+
+.addFriend {
+font-weight: 70;
+width: 100%;
+max-width: 300px;
+background-color: #DB5A42;
+font-size: 1.8rem;
+border-radius: 25px;
+box-shadow: 5px 10px 8px #888888
+}
+
+
+.addFriend a{
+    color: #ffffff
 }
